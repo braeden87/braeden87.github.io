@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Peddana&display=swap');
+
+/* Main CSS */
+html{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    min-height: 100vh;
+    background-color: #904833;
+    background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23cab290' fill-opacity='0.37'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    color: #000000;
+    font-family: 'Peddana', serif;
+    font-weight: 700;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Sign Up Form */
+.signup-page{
+    display: none;
+    font-family: Sen, sans-serif;
+    letter-spacing: 2px;
+    z-index: 100;
+    width: 75%;
+    height: 80%;
+    background-color: whitesmoke;
+    position: fixed;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 0 30px 10px rgba(0, 0, 0, .4);
+}
+form{
+    width: 90%;
+    margin: 0 auto;
+}
+.form-group{
+    height: 65px;
+}
+label{
+    position: relative;
+    bottom: 3px;
+    float: left;
+}
+input{
+    width: 100%;
+    height: 34px;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    outline: none;
+    box-sizing: border-box;
+    transition: all .3s;
+}
+input:valid{
+    border: 1px solid green;
+}
+input:invalid{
+    border: 1px solid red;
+}
+.signup-button{
+    cursor: pointer;
+    color: whitesmoke;
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    height: 50px;
+    width: 100%;
+    font-family: Sen, sans-serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-top: 5px;
+}
+.signup-button:hover{
+    filter:brightness(200%);
+    background-color: rgb(22, 22, 22);
+}
+.signup-button:focus{
+    outline: none;
+}
+
+/* Login Form */
+.login-page{
+    display: none;
+    font-family: Sen, sans-serif;
+    letter-spacing: 2px;
+    z-index: 100;
+    width: 75%;
+    height: 40%;
+    background-color: whitesmoke;
+    position: fixed;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 0 30px 10px rgba(0, 0, 0, .4);
+}
+
+/* User Area */
+.user-area{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+.user{
+    font-size: 45px;
+    display: none;
+}
+.navigation{
+    display: none;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+
+/* Main Quote Area */
+.quote-container{
+    width: auto;
+    max-width: 900px;
+    padding: 20px 30px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, .6);
+    box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+.quote-text{
+    font-size: 2.75rem;
+}
+.long-quote{
+    font-size: 2rem;
+}
+.fa-quote-left{
+    font-size: 4rem;
+}
+.quote-author{
+    margin-top: 15px;
+    font-size: 2rem;
+    font-weight: 400;
+    font-style: italic;
+}
+.button-container{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.main-button{
+    cursor: pointer;
+    font-size: 1.2rem;
+    height: 2.5rem;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background-color: #000000;
+    outline: none;
+    padding: .5rem 1.8rem;
+    box-shadow: 0 .3 rem rgba(121, 121, 121, .65);
+
+}
+.main-button:hover{
+    filter: brightness(110%);
+}
+.main-button:active{
+    transform: translate(0, .3rem);
+    box-shadow: 0 0.1rem rgba(255, 255, 255, .2);
+}
+.twitter-button:hover{
+    color: #38a1f3;
+}
+.fa-twitter{
+    font-size: 1.5rem;
+}
+
+/* Quote List Area */
+table{
+    font-family: Sen, sans-serif;
+    scroll-behavior: auto;
+    border-collapse: collapse;
+}
+table th{
+    text-align: center;
+    font-size: 22px;
+}
+table tr{
+    border-bottom: 1px solid black;
+    text-align: left;
+    font-weight: 400;
+}
+
+/* Loader */
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #333; /* Dark Gray */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+  }
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+/* Media Query: Tablet or Smaller*/
+@media screen and (max-width: 1000px){
+    .quote-container{
+        margin: auto 10px;
+    }
+    .quote-text{
+        font-size: 2.5rem;
+    }
+}
+/* Media Query: Phone*/
+@media screen and (max-width: 500px){
+    .user-area{
+        position: absolute;
+        top: 600px;
+        width: 100%;
+        z-index: 100;
+        right: 0px;
+        left: 0px;
+    }
+    .quote-container{
+        margin: auto 10px;
+        position: absolute;
+        top: 5px;
+        height: 550px;
+        scroll-behavior: auto;
+    }
+    .quote-text{
+        font-size: 2rem;
+    }
+    .button-container{
+        display: block;
+        width: 100%;
+    }
+    .main-button{
+        width: 100%;
+        border-radius: 0;
+    }
+}

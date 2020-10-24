@@ -1,0 +1,162 @@
+/*------------------------------------------------------------------
+From Home File
+------------------------------------------------------------------*/
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: transparent;
+  font-family: "Open Sans";
+  background-color: transparent;
+  overflow-x: hidden;
+}
+
+
+hr{
+  background-color: rgb(53, 119, 190);
+}
+
+#emailMatch{
+  display: none;
+  color: rgb(53, 119, 190);
+  background-color: rgb(255, 255, 255);
+}
+
+h1{
+  font-weight: lighter;
+  border-bottom: 1px solid rgb(205, 220, 235);
+  font-size: 21px;
+  color: rgb(66, 139, 202);
+  position: absolute;
+  top: 150px;
+  left: 225px;
+  right: 35px;
+  height: 33px;
+  clear: both;
+}
+
+h2{
+  padding: 14px;
+  color: rgb(255, 255, 255);
+  float: left;
+  background-color: rgb(53, 119, 190);
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  margin: 0px;
+
+}
+
+#main{
+  margin-left: 190px;
+  font-family: 'Open Sans';
+  background-color: rgb(255, 255, 255);
+}
+
+
+/*------------------------------------------------------------------
+Button (Core UI)
+------------------------------------------------------------------*/
+.btn {
+    display: block;
+    width: 100%;
+    font-weight: 400;
+    text-align: center;
+    border: 1px solid rgb(213, 213, 213);
+    color: rgb(70, 70, 70);
+    border-top: none;
+    font-size: 0.875rem;
+    line-height: 1.8;
+  } 
+
+  .btn:hover {
+    background-color: rgb(255, 255, 255);
+    color: #f5f5f5;
+    text-decoration: none;
+  }
+
+
+/*------------------------------------------------------------------
+Media Screen Size
+------------------------------------------------------------------*/
+@media (min-width: 1000px){
+  #nav{
+    display: block!important;
+  }
+  #sidebar-collapse{
+    display: block!important;
+  }
+}
+@media (max-width:  1000px){
+  #menu{
+    position: fixed;
+    display: block!important;
+    width: 85px;
+    height: 42px;
+    text-transform: uppercase;
+    background-color: #444;
+    color: #f3f3f3;
+    padding-left: 33px;
+    padding-top: 7px;
+    padding-bottom: 1px;
+    font-size: 13px;
+    font-weight: bold;
+    z-index: 1;
+    margin-top: -1px;
+    border-bottom: 1px solid rgb(204, 206, 208);
+    }
+  #menu::after{
+    display: block;
+    content: "";
+    position: fixed;
+    margin-left: -35px;
+    margin-top: 16px;
+    border: 8px solid transparent;
+    border-top-color: #444;
+    border-width: 9px 44px;
+    z-index: 1;
+    }
+  #sidebar-collapse{
+    background-color: rgb(239, 239, 239);
+    display: none;
+  }
+  #nav{
+    display: none;
+  }
+  #breadC{
+    margin-left: 85px!important;
+    z-index: 5!important;
+  }
+  #addUser{
+    left: 35px!important;
+    z-index: 1;
+  }
+  #UserList{
+    left: 20px!important;
+    z-index: 1;
+  }
+  h1{
+    left: 35px!important;
+    z-index: 1;
+  }
+  #column{
+    height: auto!important;
+    z-index: 2;
+    margin-top: 41px;
+  }
+  #home2{
+    top: 136px!important;
+  }
+  #about2{
+    top: 174px!important;
+  }
+  #settings2{
+    top: 211px!important;
+  }
+  .active::after{
+    display: none!important;
+  }
+  .home::after{
+    display: none!important;
+  }
+}
