@@ -35,7 +35,7 @@ function showSlides(n) {
 //////////////////////////////////////////
 //              Event Listeners
 //////////////////////////////////////////
-//Event Listener for when Each See Code button is pushed
+//Event Listener for when  See Code button is pushed (1st project)
 codeButton[0].addEventListener("click", () =>{
     slideIndex = 1;
     showSlides(slideIndex);
@@ -48,7 +48,7 @@ codeButton[0].addEventListener("click", () =>{
         document.getElementsByClassName("dotList")[0].style.display = "inline-block";
     }
 });
-//Event Listener for when Each See Code button is pushed
+//Event Listener for when  See Code button is pushed (2nd project)
 codeButton[1].addEventListener("click", () =>{
     slideIndex = 7;
     showSlides(slideIndex);
@@ -59,6 +59,19 @@ codeButton[1].addEventListener("click", () =>{
     }else{
         document.getElementsByClassName("slideshow-container")[1].style.display = "block";
         document.getElementsByClassName("dotList")[1].style.display = "inline-block";
+    }
+});
+//Event Listener for when  See Code button is pushed (3rd project)
+codeButton[2].addEventListener("click", () =>{
+    slideIndex = 11;
+    showSlides(slideIndex);
+    if(document.getElementsByClassName("slideshow-container")[2].style.display == "block"){
+        document.getElementsByClassName("slideshow-container")[2].style.display = "none";
+        document.getElementsByClassName("dotList")[2].style.display = "none";
+
+    }else{
+        document.getElementsByClassName("slideshow-container")[2].style.display = "block";
+        document.getElementsByClassName("dotList")[2].style.display = "inline-block";
     }
 });
 
