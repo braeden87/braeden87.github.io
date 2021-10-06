@@ -59,6 +59,11 @@
   and (-webkit-min-device-pixel-ratio: 3) { 
 
 #position{
-    display: none;
+    top: 150px;
 }
+}
+@media only screen and (max-width: 559px) {
+    #position{
+		top: 145px;
+	}
 }
