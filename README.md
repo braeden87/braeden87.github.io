@@ -1,10 +1,5 @@
 # Porfolio of Braeden Huot
 
-## Skills Utilized
-- HTML
-- CSS
-- WordPress
-
 ## Porfolio Projects
 Web Based Projects:
 - https://github.com/braeden87/Portfolio-MarginFuel
@@ -16,5 +11,5 @@ Python Projects:
 - https://github.com/braeden87/Portfolio-SudokuSolver
 
 ## Inspiration For Project Creation
-I created this website as a way to display my work to potential employers. For every project that is showcased within my portfolio I have added a video to display the projects functionality. As well as a link to the github repository of each project. 
+I created this website as a way to display my work to potential employers. For every project that is showcased within my portfolio I have added a video to display the projects functionality. As well as a link to the github repository of each project. (This website was created with Wordpress. I added a bit of functionality on my own after creating it)
 
