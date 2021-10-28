@@ -5,12 +5,12 @@
 - CSS
 - WordPress
 
-## Project Description
-Below are links to each project in the portfolio.
+## Porfolio Projects
 Web Based Projects:
 - https://github.com/braeden87/Portfolio-MarginFuel
 - https://github.com/braeden87/Portfolio-RandomQuoteGenerator
 - https://github.com/braeden87/Portfolio-Calculator
+
 Python Projects:
 - https://github.com/braeden87/Portfolio-InstagramBot
 - https://github.com/braeden87/Portfolio-SudokuSolver
